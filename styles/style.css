@@ -19,7 +19,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 5vw;
+    font-size: 6vw;
     cursor: pointer;
 }
 
@@ -30,6 +30,7 @@ body {
 .dark {
     background-color: #b58863;
 }
+
 
 .selected {
     border: 2px solid #6DAE81;
