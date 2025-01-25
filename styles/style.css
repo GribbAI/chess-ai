@@ -1,9 +1,14 @@
+:root {
+    color-scheme: light only; /* Фиксируем светлую тему */
+}
+
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: slategray;
     margin: 0;
 }
 
@@ -15,11 +20,30 @@ body {
     height: 80vmin;
 }
 
+
+
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    
+    width: 80vw;
+    height: 80vw;
+    
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    padding: 102px;
+    transform: translate(-32%, -50%); /* Возвращаем на 50% назад по двум осям */
+}
+
+
 .square {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 6vw;
+    font-size: 7vw;
     cursor: pointer;
 }
 
@@ -33,5 +57,6 @@ body {
 
 
 .selected {
-    border: 2px solid #6DAE81;
+    border: 1px solid green;
 }
+
